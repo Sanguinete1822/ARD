@@ -38,9 +38,11 @@ while vida_jogador == 1 and vida_pc == 1:
         elif balas_pc == 0:
             print("Computador sem Munição")
 #numero de Balas
-!!!!!!!!!!!!!!!!
+
     if escolha_j =='at' and escolha_pc == 'at':
         if balas_jogador > 0  and balas_pc > 0:
             vida_jogador -= 1
             vida_pc -= 1
             print("Tiro duplo")
+    print(f"Você:{balas_jogador}")
+    print(f"Computador:{balas_pc}")
