@@ -19,6 +19,7 @@ while vida_jogador == 1 and vida_pc == 1:
         if balas_jogador > 0:
             if escolha_pc != 'def':
                 if escolha_pc != 'at' or balas_pc < 1:
+                    balas_jogador -=1
                     vida_pc -= 1
                     print("você ganhou")
             else:
@@ -30,6 +31,7 @@ while vida_jogador == 1 and vida_pc == 1:
         if balas_pc > 0:
             if escolha_j != 'def':
                 if escolha_j != 'at' or balas_jogador < 1:
+                    balas_pc -= 1
                     vida_jogador -= 1
                     print("você perdeu")
             else:
