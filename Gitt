@@ -1,0 +1,58 @@
+
+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
+
+
+# repositórios git / pastas supervisionadas remotamente
+find / -type d -name ".git" 2>/dev/null
+
+#BASICS
+git init
+#inicia repositório
+git add -
+#adiciona um arquivo ao staging 
+git status 
+# status dos arquivos e staging
+git log
+# histórico
+
+
+
+#BRANCHS
+git branch
+# ver branchs locais
+# -a para ver todas; -r para ver branchs remotas
+git merge <branch>
+# joga as alterações direto para o main
+git branch -d <branch> 
+# apaga branch que fez merge
+git branch -d <branch>
+# força deletar a branch 
+
+#COMMITS
+git commit -m "comit"
+#commit com mensagem
+git commit --allow-empty -m "commit"
+#commit sem alteração
+
+## ATUALIZ
+git add -
+git commit -m "commit"
+git branch -M main
+git push -f origin main
+
+## SET UP
+git config --global user.name " "
+git config --global user.email " "
+git config --global init.defaultBranch >main<
+git config --list
+git add.
+git commit -m "Changes"
+git remote add origin https://github.com/" "/repo.git
+git branch -M >main<
+git push -u origin >main<
+
+
+
+
+
+
